@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abu Fatima Car Accessories | Tint Booking & Price Calculator — Barka, Oman</title>
+<meta name="description" content="Abu Fatima Car Accessories, Barka Oman. Tint price calculator, online booking via WhatsApp, products. Heat rejection tinting with warranty. Call +968 94652319">
+<style>
+:root{
+  --gold:#c9a227; --gold2:#e8c547; --dark:#0b1220; --card:#121c30;
+  --line:#243355; --txt:#eef2f7; --mut:#9fb0c9; --green:#22c55e;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--dark);color:var(--txt)}
+[dir="rtl"] body{font-family:'Segoe UI',Tahoma,Arial,sans-serif}
+.topbar{background:#000;border-bottom:1px solid var(--line);padding:8px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.topbar .brand{font-weight:800;letter-spacing:.5px}
+.topbar .brand span{color:var(--gold2)}
+.topbar a{color:var(--txt);text-decoration:none}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;border:0;cursor:pointer}
+.btn-gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#111}
+.btn-green{background:var(--green);color:#06280f}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+.langbtn{background:#1a2745;color:#fff;border:1px solid var(--line);border-radius:20px;padding:8px 16px;cursor:pointer;font-weight:700}
+.hero{padding:36px 16px;text-align:center;background:radial-gradient(800px 300px at 50% -50px,#1c2c52,transparent)}
+.hero h1{margin:6px 0 8px;font-size:clamp(26px,5vw,44px)}
+.hero h1 span{color:var(--gold2)}
+.hero p{color:var(--mut);margin:0 0 18px}
+.badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.badge{border:1px solid var(--line);border-radius:20px;padding:6px 12px;font-size:13px;color:var(--mut)}
+.badge b{color:var(--gold2)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 60px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:800px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h2{margin:0 0 6px;font-size:20px}
+.card h2 span{color:var(--gold2)}
+.mut{color:var(--mut);font-size:14px}
+label{display:block;font-size:13px;color:var(--mut);margin:12px 0 6px}
+select,input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0c1527;color:#fff;font-size:15px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer;user-select:none}
+.pill.on{background:var(--gold);color:#111;font-weight:800;border-color:var(--gold)}
+.films{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:6px}
+.film{border:1px solid var(--line);border-radius:10px;padding:10px;cursor:pointer}
+.film.on{border-color:var(--gold);background:#1a1503}
+.film b{display:block}
+.film small{color:var(--mut)}
+.total{background:#06130a;border:1px solid #14532d;border-radius:12px;padding:14px;margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.total .amt{font-size:30px;font-weight:900;color:var(--green)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px;text-align:center}
+th{background:#0c1527}
+.gold{color:var(--gold2);font-weight:800}
+footer{text-align:center;color:var(--mut);padding:26px;font-size:13px}
+.note{background:#221a04;border:1px solid #6b5316;border-radius:10px;padding:10px 12px;font-size:13px;margin-top:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:12px}
+.step{border:1px solid var(--line);border-radius:10px;padding:12px;font-size:14px}
+.step b{color:var(--gold2)}
+.float-wa{position:fixed;bottom:18px;inset-inline-end:18px;background:#22c55e;color:#04160a;font-weight:900;border-radius:50px;padding:14px 22px;text-decoration:none;box-shadow:0 8px 30px rgba(0,0,0,.5);z-index:50}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">ABU FATIMA <span>• BARKA, OMAN</span></div>
+  <div>
+    <a class="btn btn-ghost" href="tel:+96894652319" style="padding:8px 14px">📞 +968 94652319</a>
+    <button class="langbtn" onclick="toggleLang()" id="langBtn">عربي</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="badge" style="display:inline-block">🛡️ <b>PREMIUM TINT FILM</b> — Heat Rejection • UV Protection • Warranty</div>
+  <h1 id="t1">Your Car. <span>Your Style.</span> Our Care.</h1>
+  <p id="t2">Tint price calculator + instant booking on WhatsApp. No app needed — works on any phone.</p>
+  <div>
+    <a class="btn btn-gold" href="#calc" id="t3">Calculate Tint Price</a>
+    <a class="btn btn-green" href="#book" id="t4">Book on WhatsApp</a>
+  </div>
+  <div class="badges">
+    <span class="badge">🔥 <b>98% IRR</b> Heat Rejection</span>
+    <span class="badge">🛡️ <b>5-Year</b> Warranty</span>
+    <span class="badge">✨ Bubble-Free Finish</span>
+    <span class="badge">✅ 100% Satisfaction</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid2">
+    <!-- CALCULATOR -->
+    <div class="card" id="calc">
+      <h2>🧮 <span>Tint Price</span> Calculator</h2>
+      <div class="mut" id="cSub">Select your car + film. Price updates instantly.</div>
+
+      <label id="lFilm">1. Film type</label>
+      <div class="films" id="films"></div>
+
+      <label id="lCar">2. Car type</label>
+      <div class="pills" id="carPills">
+        <div class="pill on" data-car="sedan">🚗 Sedan</div>
+        <div class="pill" data-car="suv">🚙 SUV</div>
+      </div>
+
+      <label id="lPart">3. Which part?</label>
+      <div class="pills" id="partPills">
+        <div class="pill on" data-part="full">Full Car</div>
+        <div class="pill" data-part="front">Front Only</div>
+        <div class="pill" data-part="back">Back Only</div>
+      </div>
+
+      <div class="total">
+        <div>
+          <div class="mut" id="selDesc">USA (98% IRR) • Sedan • Full Car</div>
+          <div class="mut" id="warDesc">Warranty: 5 Year</div>
+        </div>
+        <div class="amt" id="totalAmt">80 OMR</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+        <button class="btn btn-green" onclick="bookNow()" style="flex:1" id="bBook">Book This on WhatsApp</button>
+        <button class="btn btn-ghost" onclick="callShop()" id="bCall">Call Shop</button>
+      </div>
+    </div>
+
+    <!-- BOOKING -->
+    <div class="card" id="book">
+      <h2>📅 <span>Book</span> Your Tint</h2>
+      <div class="mut" id="bSub">Fill this — it opens WhatsApp with your booking ready to send.</div>
+      <label id="lName">Your name</label>
+      <input id="fName" placeholder="e.g. Ahmed">
+      <div class="row">
+        <div>
+          <label id="lPhone">Phone</label>
+          <input id="fPhone" placeholder="e.g. 94650000">
+        </div>
+        <div>
+          <label id="lDate">Preferred day</label>
+          <input id="fDate" type="date">
+        </div>
+      </div>
+      <label id="lModel">Car model (optional)</label>
+      <input id="fModel" placeholder="e.g. Toyota Land Cruiser 2022">
+      <label id="lNote">Note (optional)</label>
+      <textarea id="fNote" rows="2" placeholder="Any request..."></textarea>
+      <button class="btn btn-green" onclick="sendBooking()" style="width:100%;margin-top:14px" id="bSend">Send Booking via WhatsApp →</button>
+      <div class="note" id="bNote">The shop confirms on WhatsApp. No advance payment needed.</div>
+    </div>
+  </div>
+
+  <!-- PRICE LIST -->
+  <div class="card" style="margin-top:16px">
+    <h2>💰 <span>Full Price</span> List <small class="mut">— from your official poster</small></h2>
+    <div style="overflow-x:auto">
+    <table id="priceTable">
+      <thead><tr><th>Film</th><th>Sedan Full</th><th>SUV Full</th><th>Front</th><th>Back</th><th>Warranty</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+    <div class="steps">
+      <div class="step"><b>1.</b> <span class="s1">Pick film above</span></div>
+      <div class="step"><b>2.</b> <span class="s2">Tap "Book" — WhatsApp opens</span></div>
+      <div class="step"><b>3.</b> <span class="s3">Visit shop in Barka, 30–90 min job</span></div>
+    </div>
+  </div>
+</div>
+
+<a class="float-wa" href="https://wa.me/96894652319?text=Hello%20Abu%20Fatima%20Car%20Accessories" target="_blank">💬 WhatsApp</a>
+
+<footer>Abu Fatima Car Accessories — Leading Project & Part L.L.C • Barka, Oman • +968 94652319<br>Drive Cool • Stay Protected • Ride in Style</footer>
+
+<script>
+const PRICES = [
+  {id:"usa98",name:"USA (98% IRR)",ar:"أمريكي (عزل 98%)",w:"5 Year",war:"5 سنوات",sedan:80,suv:90,front:25,back:25,feat:true},
+  {id:"usa70",name:"USA (70% IRR)",ar:"أمريكي (عزل 70%)",w:"3 Year",war:"3 سنوات",sedan:20,suv:30,front:15,back:15},
+  {id:"usa50",name:"USA (50% IRR)",ar:"أمريكي (عزل 50%)",w:"2 Year",war:"سنتان",sedan:18,suv:25,front:13,back:13},
+  {id:"usa30",name:"USA (30% IRR)",ar:"أمريكي (عزل 30%)",w:"1 Year",war:"سنة واحدة",sedan:12,suv:23,front:8,back:8},
+  {id:"ger10",name:"GER (10% IRR)",ar:"ألماني (عزل 10%)",w:"6 Months",war:"6 أشهر",sedan:7,suv:7,front:7,back:7}
+];
+let lang = "en";
+let sel = {film: PRICES[0], car:"sedan", part:"full"};
+const WA = "https://wa.me/96894652319";
+
+const T = {
+en:{t1:'Your Car. <span>Your Style.</span> Our Care.',t2:'Tint price calculator + instant booking on WhatsApp. No app needed — works on any phone.',t3:'Calculate Tint Price',t4:'Book on WhatsApp',cSub:'Select your car + film. Price updates instantly.',lFilm:'1. Film type',lCar:'2. Car type',lPart:'3. Which part?',bSub:'Fill this — it opens WhatsApp with your booking ready to send.',lName:'Your name',lPhone:'Phone',lDate:'Preferred day',lModel:'Car model (optional)',lNote:'Note (optional)',bSend:'Send Booking via WhatsApp →',bNote:'The shop confirms on WhatsApp. No advance payment needed.',bBook:'Book This on WhatsApp',bCall:'Call Shop',full:'Full Car',front:'Front Only',back:'Back Only',sedan:'Sedan',suv:'SUV',warranty:'Warranty'},
+ar:{t1:'سيارتك. <span>ستايلك.</span> عنايتنا.',t2:'حاسبة أسعار التظليل + حجز فوري عبر واتساب. بدون تطبيق — يعمل على أي هاتف.',t3:'احسب سعر التظليل',t4:'احجز عبر واتساب',cSub:'اختر سيارتك + الفيلم. السعر يتحدث فوراً.',lFilm:'1. نوع الفيلم',lCar:'2. نوع السيارة',lPart:'3. أي جزء؟',bSub:'املأ هذا — سيفتح واتساب وحجزك جاهز للإرسال.',lName:'الاسم',lPhone:'الهاتف',lDate:'اليوم المفضل',lModel:'موديل السيارة (اختياري)',lNote:'ملاحظة (اختياري)',bSend:'← إرسال الحجز عبر واتساب',bNote:'المحل يؤكد عبر واتساب. لا حاجة لدفع مقدم.',bBook:'احجز هذا عبر واتساب',bCall:'اتصل بالمحل',full:'سيارة كاملة',front:'أمامي فقط',back:'خلفي فقط',sedan:'سيدان',suv:'دفع رباعي',warranty:'الضمان'}};
+
+function toggleLang(){
+  lang = lang==="en"?"ar":"en";
+  document.getElementById("htmlRoot").dir = lang==="ar"?"rtl":"ltr";
+  document.getElementById("langBtn").textContent = lang==="ar"?"EN":"عربي";
+  const t = T[lang];
+  for(const k of ["t1","t2","t3","t4","cSub","lFilm","lCar","lPart","bSub","lName","lPhone","lDate","lModel","lNote","bSend","bNote","bBook","bCall"])
+    document.getElementById(k).innerHTML = t[k];
+  document.querySelector('[data-car="sedan"]').textContent = "🚗 "+t.sedan;
+  document.querySelector('[data-car="suv"]').textContent = "🚙 "+t.suv;
+  document.querySelector('[data-part="full"]').textContent = t.full;
+  document.querySelector('[data-part="front"]').textContent = t.front;
+  document.querySelector('[data-part="back"]').textContent = t.back;
+  renderFilms(); updateTotal();
+}
+function renderFilms(){
+  const box = document.getElementById("films"); box.innerHTML="";
+  PRICES.forEach(f=>{
+    const d = document.createElement("div");
+    d.className = "film"+(f.id===sel.film.id?" on":"");
+    d.innerHTML = "<b>"+(lang==="ar"?f.ar:f.name)+"</b><small>"+(lang==="ar"?f.war:f.w)+" • "+(sel.car==="sedan"?f.sedan:f.suv)+" OMR</small>";
+    d.onclick = ()=>{ sel.film=f; bindPills(); renderFilms(); updateTotal(); };
+    box.appendChild(d);
+  });
+  const tb = document.querySelector("#priceTable tbody"); tb.innerHTML="";
+  PRICES.forEach(f=>{
+    const tr = document.createElement("tr");
+    if(f.feat) tr.style.background="#1a1503";
+    tr.innerHTML = "<td class='gold'>"+(lang==="ar"?f.ar:f.name)+"</td><td>"+f.sedan+" OMR</td><td>"+f.suv+" OMR</td><td>"+f.front+" OMR</td><td>"+f.back+" OMR</td><td>"+(lang==="ar"?f.war:f.w)+"</td><td><button class='btn btn-gold' style='padding:6px 12px' onclick='pickFilm(\""+f.id+"\")'>✓</button></td>";
+    tb.appendChild(tr);
+  });
+}
+function pickFilm(id){ sel.film = PRICES.find(f=>f.id===id); bindPills(); renderFilms(); updateTotal(); document.getElementById("calc").scrollIntoView({behavior:"smooth"}); }
+function bindPills(){
+  document.querySelectorAll("#carPills .pill").forEach(p=>p.classList.toggle("on",p.dataset.car===sel.car));
+  document.querySelectorAll("#partPills .pill").forEach(p=>p.classList.toggle("on",p.dataset.part===sel.part));
+}
+function calcPrice(){
+  const f=sel.film;
+  if(sel.part==="front") return f.front;
+  if(sel.part==="back") return f.back;
+  return sel.car==="sedan"? f.sedan : f.suv;
+}
+function descStr(){
+  const t=T[lang];
+  const car = t[sel.car], part = t[sel.part];
+  const fn = lang==="ar"?sel.film.ar:sel.film.name;
+  return fn+" • "+car+" • "+part;
+}
+function updateTotal(){
+  document.getElementById("totalAmt").textContent = calcPrice()+" OMR";
+  document.getElementById("selDesc").textContent = descStr();
+  document.getElementById("warDesc").textContent = T[lang].warranty+": "+(lang==="ar"?sel.film.war:sel.film.w);
+}
+function bookNow(){
+  const msg = "Hello Abu Fatima! I want tint: "+descStr()+" = "+calcPrice()+" OMR. Please book me.";
+  window.open(WA+"?text="+encodeURIComponent(msg),"_blank");
+}
+function callShop(){ location.href="tel:+96894652319"; }
+function sendBooking(){
+  const n=document.getElementById("fName").value||"-", p=document.getElementById("fPhone").value||"-";
+  const d=document.getElementById("fDate").value||"-", m=document.getElementById("fModel").value||"-", no=document.getElementById("fNote").value||"-";
+  const msg = "New Booking — Abu Fatima\nName: "+n+"\nPhone: "+p+"\nDay: "+d+"\nCar: "+m+"\nTint: "+descStr()+" = "+calcPrice()+" OMR\nNote: "+no;
+  window.open(WA+"?text="+encodeURIComponent(msg),"_blank");
+}
+document.querySelectorAll("#carPills .pill").forEach(p=>p.onclick=()=>{sel.car=p.dataset.car;bindPills();renderFilms();updateTotal();});
+document.querySelectorAll("#partPills .pill").forEach(p=>p.onclick=()=>{sel.part=p.dataset.part;bindPills();updateTotal();});
+renderFilms(); bindPills(); updateTotal();
+</script>
+</body>
+</html>

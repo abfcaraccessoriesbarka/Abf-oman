@@ -1,0 +1,18 @@
+{
+  "shop": {
+    "name": "Abu Fatima Car Accessories",
+    "nameAr": "أبو فاطمة سيارات",
+    "company": "LEADING PROJECT & PART L.L.C",
+    "phone": "+96894652319",
+    "phoneDisplay": "+968 94652319",
+    "location": "Barka, Oman",
+    "whatsapp": "https://wa.me/96894652319"
+  },
+  "films": [
+    { "id": "usa98", "name": "USA (98% IRR)", "nameAr": "أمريكي (عزل 98%)", "warranty": "5 Year", "warrantyAr": "5 سنوات", "sedan": 80, "suv": 90, "front": 25, "back": 25, "featured": true },
+    { "id": "usa70", "name": "USA (70% IRR)", "nameAr": "أمريكي (عزل 70%)", "warranty": "3 Year", "warrantyAr": "3 سنوات", "sedan": 20, "suv": 30, "front": 15, "back": 15 },
+    { "id": "usa50", "name": "USA (50% IRR)", "nameAr": "أمريكي (عزل 50%)", "warranty": "2 Year", "warrantyAr": "سنتان", "sedan": 18, "suv": 25, "front": 13, "back": 13 },
+    { "id": "usa30", "name": "USA (30% IRR)", "nameAr": "أمريكي (عزل 30%)", "warranty": "1 Year", "warrantyAr": "سنة واحدة", "sedan": 12, "suv": 23, "front": 8, "back": 8 },
+    { "id": "ger10", "name": "GER (10% IRR)", "nameAr": "ألماني (عزل 10%)", "warranty": "6 Months", "warrantyAr": "6 أشهر", "sedan": 7, "suv": 7, "front": 7, "back": 7 }
+  ]
+}
